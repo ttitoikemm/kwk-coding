@@ -14,6 +14,11 @@
 		ACA6707F2A4A0E8A003DBDA6 /* kwk_codingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6707E2A4A0E8A003DBDA6 /* kwk_codingTests.swift */; };
 		ACA670892A4A0E8A003DBDA6 /* kwk_codingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA670882A4A0E8A003DBDA6 /* kwk_codingUITests.swift */; };
 		ACA6708B2A4A0E8A003DBDA6 /* kwk_codingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6708A2A4A0E8A003DBDA6 /* kwk_codingUITestsLaunchTests.swift */; };
+		ACA670982A4F35B1003DBDA6 /* chatbot.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA670972A4F35B1003DBDA6 /* chatbot.swift */; };
+		ACA6709A2A4F3753003DBDA6 /* reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA670992A4F3753003DBDA6 /* reminders.swift */; };
+		ACA6709C2A4F393B003DBDA6 /* grocery list.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6709B2A4F393B003DBDA6 /* grocery list.swift */; };
+		ACA6709E2A4F3978003DBDA6 /* map.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6709D2A4F3978003DBDA6 /* map.swift */; };
+		ACA670A12A4F43B5003DBDA6 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = ACA670A02A4F43B5003DBDA6 /* OpenAISwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,10 @@
 		ACA670842A4A0E8A003DBDA6 /* kwk codingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kwk codingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA670882A4A0E8A003DBDA6 /* kwk_codingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwk_codingUITests.swift; sourceTree = "<group>"; };
 		ACA6708A2A4A0E8A003DBDA6 /* kwk_codingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwk_codingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACA670972A4F35B1003DBDA6 /* chatbot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatbot.swift; sourceTree = "<group>"; };
+		ACA670992A4F3753003DBDA6 /* reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reminders.swift; sourceTree = "<group>"; };
+		ACA6709B2A4F393B003DBDA6 /* grocery list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "grocery list.swift"; sourceTree = "<group>"; };
+		ACA6709D2A4F3978003DBDA6 /* map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = map.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA670A12A4F43B5003DBDA6 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +106,10 @@
 			children = (
 				ACA6706D2A4A0E8A003DBDA6 /* kwk_codingApp.swift */,
 				ACA6706F2A4A0E8A003DBDA6 /* ContentView.swift */,
+				ACA670972A4F35B1003DBDA6 /* chatbot.swift */,
+				ACA670992A4F3753003DBDA6 /* reminders.swift */,
+				ACA6709B2A4F393B003DBDA6 /* grocery list.swift */,
+				ACA6709D2A4F3978003DBDA6 /* map.swift */,
 				ACA670712A4A0E8A003DBDA6 /* Assets.xcassets */,
 				ACA670732A4A0E8A003DBDA6 /* Preview Content */,
 			);
@@ -143,6 +157,9 @@
 			dependencies = (
 			);
 			name = "kwk coding";
+			packageProductDependencies = (
+				ACA670A02A4F43B5003DBDA6 /* OpenAISwift */,
+			);
 			productName = "kwk coding";
 			productReference = ACA6706A2A4A0E8A003DBDA6 /* kwk coding.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,9 @@
 				Base,
 			);
 			mainGroup = ACA670612A4A0E8A003DBDA6;
+			packageReferences = (
+				ACA6709F2A4F43B5003DBDA6 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = ACA6706B2A4A0E8A003DBDA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA6709E2A4F3978003DBDA6 /* map.swift in Sources */,
 				ACA670702A4A0E8A003DBDA6 /* ContentView.swift in Sources */,
+				ACA670982A4F35B1003DBDA6 /* chatbot.swift in Sources */,
 				ACA6706E2A4A0E8A003DBDA6 /* kwk_codingApp.swift in Sources */,
+				ACA6709C2A4F393B003DBDA6 /* grocery list.swift in Sources */,
+				ACA6709A2A4F3753003DBDA6 /* reminders.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +601,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACA6709F2A4F43B5003DBDA6 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACA670A02A4F43B5003DBDA6 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACA6709F2A4F43B5003DBDA6 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACA670622A4A0E8A003DBDA6 /* Project object */;
 }
